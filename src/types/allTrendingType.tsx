@@ -5,4 +5,5 @@ export type AllTrendingType = {
     overview: string,
     poster_path: string,
     media_type: string
+    backdrop_path: string
 }

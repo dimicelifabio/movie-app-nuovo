@@ -1,5 +1,5 @@
 {
-  "name": "prova",
+  "name": "movie-app-nuovo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,9 +13,11 @@
     "@chakra-ui/react": "^3.3.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-    "framer-motion": "^11.17.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "framer-motion": "^11.18.0",
+    "next-themes": "^0.4.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.4.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
@@ -29,5 +31,17 @@
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
     "vite": "^6.0.5"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimicelifabio/movie-app-nuovo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimicelifabio/movie-app-nuovo/issues"
+  },
+  "homepage": "https://github.com/dimicelifabio/movie-app-nuovo#readme"
 }

@@ -21,14 +21,18 @@ export const TrendingPeople = () => {
         if (!person.profile_path) {
           return null;
         }
-        
+
         return (
-          <div key={person.id}>
-            
-            <img
-              src={`https://image.tmdb.org/t/p/w500${person.profile_path}`}
-            />
-          </div>
+          <>
+
+            <div key={person.id} style={{justifyContent: "center"}}>
+              <img
+                src={`https://image.tmdb.org/t/p/w500${person.profile_path}`}
+                style={{borderRadius: "100%", objectFit: "cover", maxHeight: "200px"}}
+              />
+              <p>{person.name}</p>
+            </div>
+          </>
         );
       })}
     </div>
