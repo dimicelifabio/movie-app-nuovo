@@ -1,22 +1,22 @@
 import { useEffect, useState } from "react"
 import { AllTrendingType } from "../types/allTrendingType"
-import { fetchMoviesAll} from "../api/api";
+import { fetchTvAll} from "../api/api";
 
-export const MoviesAll = () => {
-  const [moviesAll, setMoviesAll] = useState<AllTrendingType[]>([]);
+export const TvAll = () => {
+  const [tvAll, setTvAll] = useState<AllTrendingType[]>([]);
 
   useEffect(() => {
-    const getAllMovies = async () => {
-      const data = await fetchMoviesAll();
-      setMoviesAll(data);
+    const getAllTv = async () => {
+      const data = await fetchTvAll();
+      setTvAll(data);
     };
-    getAllMovies();
+    getAllTv();
   }, []);
 
   return (
     <div >
       <div style={{display: "grid", width: "100%", gap: "50px", padding: "10px", gridTemplateColumns: "repeat(6, 1fr)", marginTop: "100px"}}>
-        {moviesAll.map((movie) => (
+        {tvAll.map((movie) => (
           <div key={movie.id}>
             {movie.poster_path && (
               <img

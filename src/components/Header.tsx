@@ -32,7 +32,10 @@ export const Navbar = () => {
           <Link to="/movies" className="nav-link">Film</Link> 
         </li>
         <li>
-          <a href="#" className="nav-link">Serie Tv</a> 
+          <Link to="/serieTV" className="nav-link">Serie Tv</Link> 
+        </li>
+        <li>
+          <Link to="/people" className="nav-link">Attori</Link> 
         </li>
       </ul>
 

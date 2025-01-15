@@ -33,11 +33,11 @@ export const Backdrop_path = () => {
                                 src={`https://image.tmdb.org/t/p/w780${backdrop_path[currentIndex].backdrop_path}`}
                                 alt="Backdrop"
                                 style={{
-                                    width: "100%",
+                                    width: "70%",
+                                    marginLeft: "30%",
                                     height: "auto",
                                     maxHeight: "60vh",
                                     objectFit: "cover",
-                                    background: "linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%)",
                                     zIndex: "-1"
 
                                 }}
@@ -50,12 +50,11 @@ export const Backdrop_path = () => {
                         <div
                             style={{
                                 position: "absolute",
-                                top: "40%",
+                                top: "50%",
                                 left: "20px",
-                                color: "red",
-                                fontSize: "24px",
+                                color: "white",
+                                fontSize: "32px",
                                 fontWeight: "bold",
-                                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
                                 padding: "5px 10px",
                                 borderRadius: "5px",
                             }}
@@ -66,10 +65,11 @@ export const Backdrop_path = () => {
                             style={{
                                 position: "absolute",
                                 width: "40%",
-                                top: "60%",
+                                top: "70%",
                                 left: "20px",
-                                color: "black",
-                                fontSize: "16px",
+                                fontSize: "12px",
+                                fontWeight: "normal",
+                                color: "white",
                                 padding: "5px 10px",
                                 borderRadius: "5px",
                             }}

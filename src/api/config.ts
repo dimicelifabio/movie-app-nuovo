@@ -17,3 +17,6 @@ export const PEOPLE_URL = `${BASE_URL}/trending/person/day?api_key=${API_KEY}`;
 
 /*DISCOVER MOVIES*/
 export const ALL_MOVIES_URL = `${BASE_URL}/discover/movie?api_key=${API_KEY}`;
+
+/* DISCOVER SERIETV*/
+export const ALL_SERIE_URL = `${BASE_URL}/discover/tv?api_key=${API_KEY}`

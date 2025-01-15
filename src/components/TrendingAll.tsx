@@ -15,7 +15,7 @@ export const TrendingAll = () => {
 
   return (
     <div >
-      <h2 style =  {{padding: "10px"}}>Film e serie TV consigliati per te</h2>
+      <h2 style =  {{padding: "10px"}}>Film e serie TV in tendenza</h2>
       <div style={{display: "flex", width: "100%", overflow: "scroll", gap: "50px", padding: "10px "}}>
         {trendingAll.map((movie) => (
           <div key={movie.id}>

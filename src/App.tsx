@@ -3,14 +3,18 @@ import './App.css';
 import { Navbar } from './components/Header';
 import { Homepage } from './pages/Homepage';
 import { MoviesPage } from './pages/Moviespage';
+import { TvPage } from './pages/Tvpage';
+import { Peoplepage } from './pages/Peoplepage';
 
 function App() {
   return (
     <Router>
-      <Navbar /> {/* La Navbar sarà visibile su tutte le pagine */}
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Homepage />} /> {/* Pagina Home */}
-        <Route path="/movies" element={<MoviesPage />} /> {/* Pagina dei film */}
+        <Route path="/" element={<Homepage />} /> 
+        <Route path="/movies" element={<MoviesPage />} /> 
+        <Route path="/serieTV" element={<TvPage />} /> 
+        <Route path="/people" element={<Peoplepage />} /> 
       </Routes>
     </Router>
   );
