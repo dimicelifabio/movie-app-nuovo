@@ -28,25 +28,29 @@ export const Backdrop_path = () => {
             <div style={{ position: "relative", width: "100%" }}>
                 {backdrop_path.length > 0 && (
                     <div style={{ position: "relative" }}>
+                        <div>
+                            <img
+                                src={`https://image.tmdb.org/t/p/w780${backdrop_path[currentIndex].backdrop_path}`}
+                                alt="Backdrop"
+                                style={{
+                                    width: "100%",
+                                    height: "auto",
+                                    maxHeight: "60vh",
+                                    objectFit: "cover",
+                                    background: "linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%)",
+                                    zIndex: "-1"
 
-                        <img
-                            src={`https://image.tmdb.org/t/p/w780${backdrop_path[currentIndex].backdrop_path}`}
-                            alt="Backdrop"
-                            style={{
-                                width: "100%",
-                                height: "auto",
-                                maxHeight: "50vh",
-                                objectFit: "cover",
-                                background: "linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%)"
+                                }}
+                            />
+                        </div>
 
-                            }}
-                        />
- 
+
+
 
                         <div
                             style={{
                                 position: "absolute",
-                                top: "50%",
+                                top: "40%",
                                 left: "20px",
                                 color: "red",
                                 fontSize: "24px",
@@ -62,7 +66,7 @@ export const Backdrop_path = () => {
                             style={{
                                 position: "absolute",
                                 width: "40%",
-                                top: "80%",
+                                top: "60%",
                                 left: "20px",
                                 color: "black",
                                 fontSize: "16px",
@@ -72,6 +76,7 @@ export const Backdrop_path = () => {
                         >
                             {backdrop_path[currentIndex].overview}
                         </div>
+                        
 
                     </div>
                 )}
