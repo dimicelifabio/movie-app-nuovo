@@ -21,21 +21,23 @@ export const Navbar = () => {
   return (
     <div className={`navbar ${isScrolled ? 'navbar-small' : ''}`}>
       <div className="logo-container">
-        <p>Movie App</p>
+        <p>
+          <Link to="/">Movie App</Link>
+        </p>
       </div>
-      
+
       <ul className="nav-list">
         <li>
-          <Link to="/" className="nav-link">Home</Link> 
+          <Link to="/" className="nav-link">Home</Link>
         </li>
         <li>
-          <Link to="/movies" className="nav-link">Film</Link> 
+          <Link to="/movies" className="nav-link">Film</Link>
         </li>
         <li>
-          <Link to="/serieTV" className="nav-link">Serie Tv</Link> 
+          <Link to="/serieTV" className="nav-link">Serie Tv</Link>
         </li>
         <li>
-          <Link to="/people" className="nav-link">Attori</Link> 
+          <Link to="/people" className="nav-link">Attori</Link>
         </li>
       </ul>
 
